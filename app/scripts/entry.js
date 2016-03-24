@@ -22,32 +22,9 @@ var home1 = new Home({
 var home2 = new Home({
   "element": $('.test2'),
   "message": "Every day I'm hovering",
-  "place": 'bottom'
+  "place": 'right'
 });
 
-$('.test').on('mouseenter', function() {
-  $('body').append(home.render().el);
-  home.align()
-});
-
-$('.test').on('mouseout', function() {
-  home.render().el.remove();
-});
-
-$('.test1').on('mouseenter', function() {
-  $('body').append(home1.render().el);
-  home1.align()
-});
-
-$('.test1').on('mouseout', function() {
-  home1.render().el.remove();
-});
-
-$('.test2').on('mouseenter', function() {
-  $('body').append(home2.render().el);
-  home2.align()
-});
-
-$('.test2').on('mouseout', function() {
-  home2.render().el.remove();
-});
+home.display();
+home1.display();
+home2.display();

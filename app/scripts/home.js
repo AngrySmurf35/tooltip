@@ -131,6 +131,19 @@ module.exports = Backbone.View.extend({
 
         },
 
+        display: function() {
+          var _this = this;
+          $(this.settings.element).on('mouseenter', function() {
+            $('body').append(_this.render().el);
+            _this.align();
+          });
+
+          $(this.settings.element).on('mouseout', function() {
+            _this.render().el.remove();
+          });
+
+        },
+
         render: function() {
             this.$el.html(this.template({ message: this.settings.message, caret_class: this.caret_class }));
             return this;

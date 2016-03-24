@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "bower": "^1.7.7",
     "css-loader": "^0.23.1",
     "style-loader": "^0.13.0",
     "template-html-loader": "0.0.3",

@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "description": "Testing project",
+  "main": "index.js",
+  "authors": [
+    "AngrySmurf35 <bogdrazvan@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AngrySmurf35/tooltip",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.2",
+    "backbone": "^1.3.3"
+  }
+}
